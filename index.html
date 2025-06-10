@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    
+    <div class="cart-controls">
+        <div style="flex: 1;">
+            <h2>Add Item</h2>
+            <div class="form-group">
+                <input type="text" id="itemName" placeholder="Item name">
+            </div>
+            <div class="form-group">
+                <input type="number" id="itemPrice" placeholder="Price" min="0" step="0.01">
+            </div>
+            <div class="form-group">
+                <input type="number" id="itemQuantity" placeholder="Quantity" min="1" value="1">
+            </div>
+            <button id="addItemBtn">Add to Cart</button>
+        </div>
+        
+        <div style="flex: 1;">
+            <h2>Remove Item</h2>
+            <div class="form-group">
+                <input type="text" id="removeItemName" placeholder="Item name">
+            </div>
+            <button id="removeItemBtn">Remove from Cart</button>
+        </div>
+    </div>
+    
+    <button id="printReceiptBtn">Print Receipt</button>
+    
+    <h2>Your Cart</h2>
+    <div id="cartContents">Your cart is empty</div>
+    
+    <h2>Receipt</h2>
+    <div id="receiptOutput"></div>
+   <script src="script.js"></script> 
+</body>
+</html>
